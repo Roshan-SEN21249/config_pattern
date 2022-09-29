@@ -1,0 +1,22 @@
+---
+# this template is basically for the tabular case
+parser_config:
+  parse_type: tabular
+
+  parser_schema:
+    main_div:
+    rows:
+    row_filter:
+      link: Not-Empty or regex
+      title: regex
+    attributes:
+      link:
+       xpath:
+      date:
+       xpath:
+       date_string_format:
+      title:
+       xpath:
+      extras:
+        attribute_1:
+    method:

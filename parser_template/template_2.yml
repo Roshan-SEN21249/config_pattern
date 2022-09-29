@@ -1,0 +1,16 @@
+---
+parser_config:
+  parse_type: semi-tabular
+  parser_schema:
+    main_div:
+    rows:
+    attributes:
+      link:
+       xpath:
+      date:
+       xpath:
+      title:
+       xpath:
+      extras:
+        attribute_1:
+    method: text

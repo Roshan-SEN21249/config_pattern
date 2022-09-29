@@ -1,0 +1,7 @@
+---
+parser_config:
+  parse_type: non-tabular
+  parser_schema:
+     link:
+       xpath:
+       filter_xpath:
