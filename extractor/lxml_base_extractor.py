@@ -4,50 +4,6 @@ from dateutil.parser import parse
 from lxml.html import document_fromstring
 from datetime import datetime
 
-# hpra
-# https://www.hpra.ie/homepage
-
-parser_schema_hpra = {
-    'main_div': './/table',
-    'rows': './/tbody//tr',
-    'attributes': {
-        'link': {
-            'xpath': './/td[2]//@href',
-        },
-        'title': {
-            'xpath': './/td[2]//a'
-        },
-        'date': {
-            'xpath': './/td[1]//span',
-            'date_format': '%d/%m/%Y',
-        },
-        'extras':{
-            'attribute_1':{
-                'key': ''
-            }
-        }
-
-    }
-
-}
-
-# https://www.consumerfinance.gov
-parser_schema_cfpb = {
-    'main_div': './/section[contains(@class,"filterable")]',
-    'rows': './/article[@class="o-post-preview"]',
-    'attributes': {
-        'link': {
-            'xpath': './/h3//@href',
-        },
-        'title': {
-            'xpath': './/h3//a'
-        },
-        'date': {
-            'xpath': './/time[@class="datetime_date"]',
-        },
-    }
-}
-
 # famhp
 # https://www.famhp.be
 
@@ -238,4 +194,4 @@ class LXMLBaseExtractor:
         self.extract_utility(rows, parser_schema, rv)
         final_dict = self.get_default_return_dict()
         self.filter_meta_data(rv, final_dict)
-        return final_dict
+        return rv
