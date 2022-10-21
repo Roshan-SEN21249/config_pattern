@@ -1,5 +1,6 @@
-from parser_module.mapper import PAGINATION_MAPPER, EXTRACTOR_MAPPER
-from requests import *
+from requests import get
+from config_pattern.parser_module.mapper import PAGINATION_MAPPER, EXTRACTOR_MAPPER
+
 
 META_DICT_LIST = []
 

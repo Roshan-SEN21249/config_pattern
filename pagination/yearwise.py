@@ -1,5 +1,7 @@
-#from pagination_mod.base_class_implementation import BaseImplementation
+from base_class_implementation import BaseImplementation
 from datetime import datetime
+
+# this class basically implements the yearwise pagination
 
 
 class YearPagination(BaseImplementation):

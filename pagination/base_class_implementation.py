@@ -1,4 +1,4 @@
-# from pagination_mod.base_class import BasePagination
+from base_class import BasePagination
 
 
 class BaseImplementation(BasePagination):

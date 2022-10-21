@@ -1,4 +1,4 @@
-#from pagination_mod.base_class_implementation import BaseImplementation
+from base_class_implementation import BaseImplementation
 class YearAndPageWisePagination(BaseImplementation):
     # TODO implement this class
     def __init__(self, pagination_config):

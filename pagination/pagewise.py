@@ -1,4 +1,4 @@
-#from pagination_mod.base_class_implementation import BaseImplementation
+from base_class_implementation import BaseImplementation
 
 
 class PagewisePagination(BaseImplementation):
