@@ -1,0 +1,15 @@
+---
+# case where only link and date is available on listing page
+# and title  and main_content has to be retrieve from the  article page
+content_config:
+  date:
+    xpath:
+    filter:
+  main_content:
+    xpath:
+    filter_xpath:
+  depth:
+    level: 2
+    pdf_link:
+      xpath:
+      filter:

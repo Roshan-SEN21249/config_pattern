@@ -1,0 +1,20 @@
+---
+# event_page
+# euro-next case
+# case where only link is available at listing page
+# and title and date has to be retrieve from the main article page and their is possibility of pdf link
+content_config:
+  title:
+    xpath:
+    filter:
+  date:
+    xpath:
+    filter:
+  main_content:
+    xpath:
+    filter_xpath:
+  depth:
+    level: 2
+    pdf_link:
+      xpath:
+      filter:
